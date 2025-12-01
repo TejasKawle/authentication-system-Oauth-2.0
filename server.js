@@ -8,7 +8,7 @@ import cors from "cors";
 import passport from "passport";
 import "./src/config/passport.js"; 
 import authRoute from "./src/routes/authRoute.js";
-
+import { errorMiddleware } from "./src/middlewares/errorMiddleware.js";
 const app = express();
 connectDB();
 
@@ -24,6 +24,7 @@ app.use("/api/auth", authRoute);
 
 const PORT = process.env.PORT || 5000;
 
+app.use(errorMiddleware)
 app.listen(PORT, () => {
   console.log("server is running on port :", PORT);
 });
