@@ -1,5 +1,5 @@
 
-# ** Authentication System (JWT + Refresh Token + Google OAuth) – Node.js / Express / MongoDB**
+# Authentication System (JWT + Refresh Token + Google OAuth) – Node.js / Express / MongoDB
 
 A complete authentication system built with **Node.js**, **Express**, **MongoDB**, **JWT**, and **Google OAuth**.
 Includes user registration, login, secure route access, role-based authorization, refresh token rotation, logout, and social login using Google.
